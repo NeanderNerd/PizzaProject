@@ -1,0 +1,28 @@
+body {
+	background-image: url("./pizza.png");
+	background-position: top;
+	background-attachment: fixed;
+	text-align: center;
+}
+
+.list {
+	background-image: url("./pizza.jpg");
+	border-radius: 15%;
+	width: 200px;
+	color: green;
+}
+
+.title {
+	background-image: url("./pizza2.gif");
+	border-radius: 15%;
+	width: 250px;
+	text-decoration: underline;
+	color: green;
+}
+.heading{
+	text-align: Center;
+	text-decoration: underline;
+	background-image: url("./pizza3.jpg");
+	color: white;
+	
+}
