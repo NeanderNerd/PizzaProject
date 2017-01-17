@@ -12,114 +12,116 @@
 		<div class="heading">
 			<h2>Please Make Selections Below and Your Invoice Will Appear.</h2>
 		</div>
-		<form method="post" id="submit" action="order()">
-			<div class="size">
-				<div class="title">
-					<h4>Size:<h4>
-				</div>
-				<div class="list">
-					<ol>
-						<label for="Personal"><li>Personal<input id="Personal" type="radio" name="size" value="Personal" checked>$6.00</li></label>
-						<label for="Medium"><li>Medium<input id="Medium" type="radio" name="size" value="Medium">$10.00</li></label>
-						<label for="Large"><li>Large<input id="Large" type="radio" name="size" value="Large">$14.00</li></label>
-						<label for="Extra Large"><li>Extra Large<input id="Extra Large" type="radio" name="size" value="Extra Large">$16.00</li></label>
-					</ol>
-				</div>
-			</div> <!--size box-->
+			<form method="post" id="size" action="Size()">
+				<div class="size">
+					<div class="title">
+						<h4>Size:<h4>
+					</div>
+					<div class="list">
+						<ol>
+							<label for="Personal"><li>Personal<input class="size" id="Personal" type="radio" name="size" value="Personal" checked>$6.00</li></label>
+							<label for="Medium"><li>Medium<input class="size" id="Medium" type="radio" name="size" value="Medium">$10.00</li></label>
+							<label for="Large"><li>Large<input class="size" id="Large" type="radio" name="size" value="Large">$14.00</li></label>
+							<label for="Extra Large"><li>Extra Large<input class="size" id="Extra Large" type="radio" name="size" value="Extra Large">$16.00</li></label>
+						</ol>
+					</div>
+				</div> <!--size box-->
 			
-			<div class="container1">
-		
-				<div class="Cheese">
-					<div class="title">
-						<h4>Cheese:</h4>
-						<h5>Extra Cheese is $3.00 Extra</h5>
-					</div>
-					<div class="list">
-						<ul>
-							<label for="Regular"><li>Regular<input id="Regular" type="radio" name="cheese" value="Regular" checked></li></label>
-							<label for="No Cheese"><li>No Cheese<input id="No Cheese" type="radio" name="cheese" value="No Cheese"></li></label>
-							<label for="Extra Cheese"><li>Extra Cheese<input id="Extra Cheese" type="radio" name="cheese" value="Extra Cheese"></li></label>
-						</ul>
-					</div>
-				</div> <!--Cheese select list-->
-		
-				<div class="meat">
-					<div class="title">
-						<h4>Meats:</h4>
-						<h5>First Meat Free, $1.00 Additional Per Meat</h5>
-					</div>
-					<div class="list">
-						<ol>
-							<label for="Pepperoni"><li>Pepperoni<input id="Pepperoni" type="checkbox" value="Pepperoni" checked></li></label>
-							<label for="Sausage"><li>Sausage<input id="Sausage" type="checkbox" value="Sausage"></li></label>
-							<label for="Canadian Bacon"><li>Canadian Bacon<input id="Canadian Bacon" type="checkbox" value="Canadian Bacon"></li></label>
-							<label for="Ground Beef"><li>Ground Beef<input id="Ground Beef" type="checkbox" value="Ground Beef"></li></label>
-							<label for="Anchovy"><li>Anchovy<input id="Anchovy" type="checkbox" value="Anchovy"></li></label>
-							<label for="Chicken"><li>Chicken<input id="Chicken" type="checkbox" value="Chicken"></li></label>
-						</ol>
-					</div>
-				</div> <!--Meats Box-->		
-			</div><!--container for lists 2-3-->
-		
-			<div class="container2">
-		
-				<div class="sauce">
-					<div class="title">
-						<h4>Sauce:</h4>
-						<h5>Any Sauce No Extra</h5>
-					</div>
-					<div class="list">
-						<ol>
-							<label for="Marinara Sauce"><li>Marinara Sauce<input id="Marinara Sauce" type="radio" name="sauce" value="Marinara Sauce" checked></li></label>
-							<label for="White Sauce"><li>White Sauce<input id="White Sauce" type="radio" name="sauce" value="White Sauce"></li></label>
-							<label for="Barbaque Sauce"><li>Barbaque Sauce<input id="Barbaque Sauce" type="radio" name="sauce" value="Barbaque Sauce"></li></label>
-							<label for="No Sauce"><li>No Sauce<input id="No Sauce" type="radio" name="sauce" value="No Sauce"></li></label>
-						</ol>
-					</div>
-				</div><!--Sauce Selection-->
-		
-				<div class="crust">
-					<div class="title">
-						<h4>Crust:</h4>
-						<h5>All Crust Included Except Stuffed Crust, $3.00 Extra.</h5>
-					</div>
-					<div class="list">
-						<ol>
-							<label for="Plain Crust"><li>Plain Crust<input id="Plain Crust" type="radio" name="crust" value="Plain Crust" checked></li></label>
-							<label for="Garlic Butter Crust"><li>Garlic Butter Crust<input id="Garlic Butter Crust" type="radio" name="crust" value="Garlic Butter Crust"></li></label>
-							<label for="Cheese Stuffed Crust"><li>Cheese Stuffed Crust<input id="Cheese Stuffed Crust" type="radio" name="crust" value="Cheese Stuffed Crust"></li></label>
-							<label for="Spicy Crust"><li>Spicy Crust<input id="Spicy Crust" type="radio" name="crust" value="Spicy Crust"></li></label>
-							<label for="House Special Crust"><li>House Special Crust<input id="House Special Crust" type="radio" name="crust" value="House Special Crust"></li></label>
-						</ol>
-					</div>
-				</div><!--Crust Selection-->
-			</div><!-- container for lists 4-5 -->
 			
-			<div class="veggies">
-				<div class="title">
-					<h4>Vegetables:</h4>
-					<h5>First Vegetable Free, $1.00 Additional Per Vegetable</h5>
-				</div>
-				<div class="list">
-					<ol>
-						<label for="Tomatoes"><li>Tomatoes<input id="Tomatoes" type="checkbox" value="Tomatoes"></li></label>
-						<label for="Onions"><li>Onions<input id="Onions" type="checkbox" value="Onions"></li></label>
-						<label for="Olives"><li>Olives<input id="Olives" type="checkbox" value="olives"></li></label>
-						<label for="Green Peppers"><li>Green Peppers<input id="Green Peppers" type="checkbox" value="Green Peppers"></li></label>
-						<label for="Mushrooms"><li>Mushrooms<input id="Mushrooms" type="checkbox" value="Mushrooms"></li></label>
-						<label for="Pineapple"><li>Pineapple<input id="Pineapple" type="checkbox" value="Pineapple"></li></label>
-						<label for="Spinach"><li>Spinach<input id="Spinach" type="checkbox" value="Spinach"></li></label>
-						<label for="Jalapenos"><li>Jalapenos<input id="Jalapenos" type="checkbox" value="Jalapenos"></li></label>
-					<ol>
-				</div>
-			</div><!--Veggy Selection-->
+				<div class="container1">
+					<div class="Cheese">
+						<div class="title">
+							<h4>Cheese:</h4>
+							<h5>Extra Cheese is $3.00 Extra</h5>
+						</div>
+					<div class="list">
+							<ul>
+								<label for="Regular"><li>Regular<input class="cheese" id="Regular" type="radio" name="cheese" value="Regular" checked></li></label>
+								<label for="No Cheese"><li>No Cheese<input class="cheese" id="No Cheese" type="radio" name="cheese" value="No Cheese"></li></label>
+								<label for="Extra Cheese"><li>Extra Cheese<input class="cheese" id="Extra Cheese" type="radio" name="cheese" value="Extra Cheese"></li></label>
+							</ul>
+						</div>
+					</div> <!--Cheese select list-->
+			
+					<div class="meat">
+						<div class="title">
+							<h4>Meats:</h4>
+							<h5>First Meat Free, $1.00 Additional Per Meat</h5>
+						</div>
+						<div class="list">
+							<ol>
+								<label for="Pepperoni"><li>Pepperoni<input class="meat" id="Pepperoni" type="checkbox" value="Pepperoni" checked></li></label>
+								<label for="Sausage"><li>Sausage<input class="meat" id="Sausage" type="checkbox" value="Sausage"></li></label>
+								<label for="Canadian Bacon"><li>Canadian Bacon<input class="meat" id="Canadian Bacon" type="checkbox" value="Canadian Bacon"></li></label>
+								<label for="Ground Beef"><li>Ground Beef<input class="meat" id="Ground Beef" type="checkbox" value="Ground Beef"></li></label>
+								<label for="Anchovy"><li>Anchovy<input class="meat" id="Anchovy" type="checkbox" value="Anchovy"></li></label>
+								<label for="Chicken"><li>Chicken<input class="meat" id="Chicken" type="checkbox" value="Chicken"></li></label>
+							</ol>
+						</div>
+					</div> <!--Meats Box-->
+			
+				</div><!--container for lists 2-3-->
 		
-			<div class="container3">
-				<div class="order">
-					<input type="submit" value="submit">
-				</div>
-			</div><!--Order and Clear Buttons-->
-		</form>
+				<div class="container2">
+					<div class="sauce">
+						<div class="title">
+							<h4>Sauce:</h4>
+							<h5>Any Sauce No Extra</h5>
+						</div>
+						<div class="list">
+							<ol>
+								<label for="Marinara Sauce"><li>Marinara Sauce<input class="sauce" id="Marinara Sauce" type="radio" name="sauce" value="Marinara Sauce" checked></li></label>
+								<label for="White Sauce"><li>White Sauce<input class="sauce" id="White Sauce" type="radio" name="sauce" value="White Sauce"></li></label>
+								<label for="Barbaque Sauce"><li>Barbaque Sauce<input class="sauce" id="Barbaque Sauce" type="radio" name="sauce" value="Barbaque Sauce"></li></label>
+								<label for="No Sauce"><li>No Sauce<input class="sauce" id="No Sauce" type="radio" name="sauce" value="No Sauce"></li></label>
+							</ol>
+						</div>
+					</div><!--Sauce Selection-->
+				
+			
+						
+					<div class="crust">
+						<div class="title">
+							<h4>Crust:</h4>
+							<h5>All Crust Included Except Stuffed Crust, $3.00 Extra.</h5>
+						</div>
+						<div class="list">
+							<ol>
+								<label for="Plain Crust"><li>Plain Crust<input class="crust" id="Plain Crust" type="radio" name="crust" value="Plain Crust" checked></li></label>
+								<label for="Garlic Butter Crust"><li>Garlic Butter Crust<input class="crust" id="Garlic Butter Crust" type="radio" name="crust" value="Garlic Butter Crust"></li></label>
+								<label for="Cheese Stuffed Crust"><li>Cheese Stuffed Crust<input class="crust" id="Cheese Stuffed Crust" type="radio" name="crust" value="Cheese Stuffed Crust"></li></label>
+								<label for="Spicy Crust"><li>Spicy Crust<input class="crust" id="Spicy Crust" type="radio" name="crust" value="Spicy Crust"></li></label>
+								<label for="House Special Crust"><li>House Special Crust<input class="crust" id="House Special Crust" type="radio" name="crust" value="House Special Crust"></li></label>
+							</ol>
+						</div>
+					</div><!--Crust Selection-->
+				</div><!-- container for lists 4-5 -->
+					
+				<div class="veggies">
+					<div class="title">
+						<h4>Vegetables:</h4>
+						<h5>First Vegetable Free, $1.00 Additional Per Vegetable</h5>
+					</div>
+					<div class="list">
+						<ol>
+							<label for="Tomatoes"><li>Tomatoes<input class="veggy" id="Tomatoes" type="checkbox" value="Tomatoes"></li></label>
+							<label for="Onions"><li>Onions<input class="veggy" id="Onions" type="checkbox" value="Onions"></li></label>
+							<label for="Olives"><li>Olives<input class="veggy" id="Olives" type="checkbox" value="olives"></li></label>
+							<label for="Green Peppers"><li>Green Peppers<input class="veggy" id="Green Peppers" type="checkbox" value="Green Peppers"></li></label>
+							<label for="Mushrooms"><li>Mushrooms<input class="veggy" id="Mushrooms" type="checkbox" value="Mushrooms"></li></label>
+							<label for="Pineapple"><li>Pineapple<input class="veggy" id="Pineapple" type="checkbox" value="Pineapple"></li></label>
+							<label for="Spinach"><li>Spinach<input class="veggy" id="Spinach" type="checkbox" value="Spinach"></li></label>
+							<label for="Jalapenos"><li>Jalapenos<input class="veggy" id="Jalapenos" type="checkbox" value="Jalapenos"></li></label>
+						<ol>
+					</div>
+				</div><!--Veggy Selection-->
+		
+				<div class="container3">
+					<div class="order">
+						<input type="submit" value="Order">
+					</div>
+				</div><!--Order and Clear Buttons-->
+			</form>
 		
 		
 		
