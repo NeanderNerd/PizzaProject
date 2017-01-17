@@ -6,23 +6,66 @@ body {
 }
 
 .list {
-	background-image: url("./pizza.jpg");
+	background: rgba(164, 207, 222, .4);
 	border-radius: 15%;
-	width: 200px;
-	color: green;
+	width: 250px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .title {
-	background-image: url("./pizza2.gif");
+	background: rgba(164, 207, 222, .4);
 	border-radius: 15%;
 	width: 250px;
 	text-decoration: underline;
-	color: green;
 }
-.heading{
+.heading {
 	text-align: Center;
 	text-decoration: underline;
-	background-image: url("./pizza3.jpg");
-	color: white;
-	
+	background: rgba(164, 207, 222, .4);	
 }
+
+.container1 {
+	position: absolute;
+}
+
+.container2 {
+	position: absolute;
+	right: 0px;
+}
+
+.order , .Clear {
+	display: inline-block;
+}
+
+.veggies {
+	position: center;
+	margin: auto;
+	width: 250px;
+}
+
+.size {
+	position: center;
+	margin: auto;
+	width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
