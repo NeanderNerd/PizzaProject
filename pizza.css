@@ -3,6 +3,7 @@ body {
 	background-position: top;
 	background-attachment: fixed;
 	text-align: center;
+	padding-bottom: 600px;
 }
 
 .list {
@@ -32,25 +33,32 @@ body {
 
 .container2 {
 	position: absolute;
-	right: 0px;
+	right: 0;
 }
 
 
 .veggies {
-	position: center;
 	margin: auto;
 	width: 250px;
 }
 
 .size {
-	position: center;
 	margin: auto;
 	width: 250px;
 	text-align: center;
 	position: relative;
 }
 
-
+.orderpopup {
+	background: rgba(164, 207, 222, 1);
+	border-radius: 15%;
+	width: 400px;
+	position: fixed;
+	bottom: 10%;
+	left: 25%;
+	opacity: 0;
+	
+}
 
 
 
