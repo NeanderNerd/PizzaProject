@@ -12,20 +12,17 @@
 		<div class="heading">
 			<h2>Please Make Selections Below and Your Invoice Will Appear.</h2>
 		</div>
-			<form method="post" id="frmTotal" action="getTotal()">
+			<form method="post" id="frmTotal">
 				<div class="size">
 					<div class="title">
 						<h3>Size:<h3>
 					</div>
 					<div class="list">
 						<ol>
-							<label for="Personal"><li>Personal<input class="sizes" id="Personal" type="radio" name="size" value="Personal" checked>$6.00</li></label>
-							<br>
-							<label for="Medium"><li>Medium<input class="sizes" id="Medium" type="radio" name="size" value="Medium"></li>$10.00</label>
-							<br>
-							<label for="Large"><li>Large<input class="sizes" id="Large" type="radio" name="size" value="Large"></li>$14.00</label>
-							<br>
-							<label for="Extra Large"><li>Extra Large<input class="sizes" id="Extra Large" name="size" type="radio" value="Extra Large">$16.00</li></label>
+							<label for="Personal"><li>Personal<input class="sizes" id="Personal" type="radio" name="size" value="Personal Pizza" checked>$6.00</li></label>
+							<label for="Medium"><li>Medium<input class="sizes" id="Medium" type="radio" name="size" value="Medium Pizza">$10.00</li></label>
+							<label for="Large"><li>Large<input class="sizes" id="Large" type="radio" name="size" value="Large Pizza">$14.00</li></label>
+							<label for="Extra Large"><li>Extra Large<input class="sizes" id="Extra Large" name="size" type="radio" value="Extra Large Pizza">$16.00</li></label>
 						</ol>
 					</div>
 				</div> <!--size box-->
@@ -39,7 +36,7 @@
 						</div>
 					<div class="list">
 							<ul>
-								<label for="Regular"><li>Regular<input class="cheeses" id="Regular" type="radio" name="cheese" value="Regular" checked></li></label>
+								<label for="Regular"><li>Regular<input class="cheeses" id="Regular" type="radio" name="cheese" value="Regular Cheese" checked></li></label>
 								<label for="No Cheese"><li>No Cheese<input class="cheeses" id="No Cheese" type="radio" name="cheese" value="No Cheese"></li></label>
 								<label for="Extra Cheese"><li>Extra Cheese<input class="cheeses" id="Extra Cheese" type="radio" name="cheese" value="Extra Cheese"></li></label>
 							</ul>
@@ -121,7 +118,7 @@
 		
 				<div class="container3">
 					<div class="order">
-						<input type="submit" value="Order">
+						<input id="btnorder" type="button" value="Order" onclick="getTotal()">
 					</div>
 				</div><!--Order and Clear Buttons-->
 			</form>
