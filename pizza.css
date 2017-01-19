@@ -3,7 +3,7 @@ body {
 	background-position: top;
 	background-attachment: fixed;
 	text-align: center;
-	padding-bottom: 600px;
+	padding-bottom: 200px;
 }
 
 .list {
@@ -49,18 +49,29 @@ body {
 	position: relative;
 }
 
-.orderpopup {
+#orderpopup {
 	background: rgba(164, 207, 222, 1);
 	border-radius: 15%;
 	width: 400px;
-	position: fixed;
-	bottom: 10%;
-	left: 25%;
-	opacity: 0;
-	
+	position: relative;
+	bottom: 0px;
+	left: 23%;
+	opacity: 0;	
 }
 
+button {
+	color: white;
+	border: none;
+	background-color: #79cf70;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	font-size: 16px;
+}
 
+.C, .order {
+	display: inline-block;
+}
 
 
 

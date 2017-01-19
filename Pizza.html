@@ -4,6 +4,7 @@
 		<meta name="charset" content="charset" charset="utf-8">
 		<title>University Pizza Online Order</title>
 		<link rel="stylesheet" type="text/css" href="./pizza.css">
+		<script type="text/javascript" src="./pizza.js"></script>
 		<!--[if it IE 9]>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
 		<![endif]-->
@@ -106,7 +107,7 @@
 						<ol>
 							<label for="Tomatoes"><li>Tomatoes<input class="veggy" id="Tomatoes" type="checkbox" value="Tomatoes"></li></label>
 							<label for="Onions"><li>Onions<input class="veggy" id="Onions" type="checkbox" value="Onions"></li></label>
-							<label for="Olives"><li>Olives<input class="veggy" id="Olives" type="checkbox" value="olives"></li></label>
+							<label for="Olives"><li>Olives<input class="veggy" id="Olives" type="checkbox" value="Olives"></li></label>
 							<label for="Green Peppers"><li>Green Peppers<input class="veggy" id="Green Peppers" type="checkbox" value="Green Peppers"></li></label>
 							<label for="Mushrooms"><li>Mushrooms<input class="veggy" id="Mushrooms" type="checkbox" value="Mushrooms"></li></label>
 							<label for="Pineapple"><li>Pineapple<input class="veggy" id="Pineapple" type="checkbox" value="Pineapple"></li></label>
@@ -120,26 +121,18 @@
 					<div class="order">
 						<button id="btnorder" onclick="getTotal()">Order</button>
 					</div>
+					<div class="C">
+						<button id="btnC" onclick="getReset()">Clear</button>
+					</div>
 				</div><!--Order and Clear Buttons-->
 			
 		
-		<div class="orderpopup">
-			<div class="text1"></div><br>
-			<div class="text2"></div><br>
-			<div class="runningtotal"></div>
+		<div id="orderpopup">
+			<div id="text1"></div><br>
+			<div id="text2"></div><br>
+			<div id="runningtotal"></div>
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	<script type="text/javascript" src="./pizza.js"></script>
+	
 	</body>
 </html>
 	
