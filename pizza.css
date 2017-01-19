@@ -7,14 +7,14 @@ body {
 }
 
 .list {
-	background: rgba(164, 207, 222, .5);
+	background: rgba(164, 207, 222, .6);
 	border-radius: 15%;
 	width: 250px;
 	font-weight: bold;
 }
 
 .title {
-	background: rgba(164, 207, 222, .5);
+	background: rgba(164, 207, 222, .6);
 	border-radius: 15%;
 	width: 250px;
 	text-decoration: underline;
@@ -24,7 +24,7 @@ body {
 .heading {
 	text-align: Center;
 	text-decoration: underline;
-	background: rgba(164, 207, 222, .5);	
+	background: rgba(164, 207, 222, .6);	
 }
 
 .container1 {
@@ -50,7 +50,7 @@ body {
 }
 
 #orderpopup {
-	background: rgba(164, 207, 222, 1);
+	background: rgba(164, 207, 222, .7);
 	border-radius: 15%;
 	width: 400px;
 	position: relative;

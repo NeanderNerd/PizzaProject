@@ -86,7 +86,7 @@ function getCrust(runningTotal, text1, text2) {
    for (i = 0; i < crustArray.length; i++) {
       if (crustArray[i].checked) {
          var selectedCrust = crustArray[i].value;
-         text2 = text2+selectedCrust+"<br>";
+         text2 = text2+selectedCrust+":<br>";
       }
    }
    if (selectedCrust === "Plain Crust") {
@@ -117,7 +117,7 @@ function getMeat(runningTotal, text1, text2) {
    for (i = 0; i < meatArray.length; i++) {
       if (meatArray[i].checked) {
          selectedMeat.push(meatArray[i].value);
-         text2 = text2+meatArray[i].value+"<br>";
+         text2 = text2+meatArray[i].value+":<br>";
       }
    }
    var meatCount = selectedMeat.length;
@@ -126,7 +126,7 @@ function getMeat(runningTotal, text1, text2) {
 	  text2 = text2+"$"+meatTotal+".00<br>";
    } else {
       meatTotal = 0;
-	  text2 = text2+"Vegetarian<br>$"+meatTotal+".00<br>";
+	  text2 = text2+"Vegetarian:<br>$"+meatTotal+".00<br>";
    }
    runningTotal = (runningTotal + meatTotal);
    getVeggy(runningTotal, text1, text2);
@@ -140,7 +140,7 @@ function getVeggy(runningTotal, text1, text2) {
    for (i = 0; i < vegArray.length; i++) {
       if (vegArray[i].checked) {
          selectedVeg.push(vegArray[i].value);
-         text2 = text2+vegArray[i].value+"<br>";
+         text2 = text2+vegArray[i].value+":<br>";
       }
    }
    var vegCount = selectedVeg.length;
@@ -149,7 +149,7 @@ function getVeggy(runningTotal, text1, text2) {
 	  text2 = text2+"$"+vegTotal+".00<br>";
    } else {
       vegTotal = 0;
-	  text2 = text2+"No Vegetables<br>$"+vegTotal+".00<br>";
+	  text2 = text2+"No Vegetables:<br>$"+vegTotal+".00<br>";
    }
    runningTotal = (runningTotal + vegTotal);
    document.getElementById("orderpopup").style.opacity=1;
