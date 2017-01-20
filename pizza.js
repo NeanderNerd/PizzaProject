@@ -144,7 +144,7 @@ function getVeggy(runningTotal, text1, text2) {
       }
    }
    var vegCount = selectedVeg.length;
-   if (vegCount > 1) {
+   if (vegCount >= 1) {
       vegTotal = (vegCount - 1);
 	  text2 = text2+"$"+vegTotal+".00<br>";
    } else {
